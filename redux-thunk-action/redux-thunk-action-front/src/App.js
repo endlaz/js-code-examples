@@ -37,7 +37,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Pagination example</h1>
+        <h1>Pagination + Redux Thunk Actions example</h1>
         <List data={this.props.movies.rows} currentPage={parseInt(queryString.parse(this.props.location.search).page)} />
         {this.pagination(this.props.movies.pages)}
         <AddMovie currentPage={parseInt(queryString.parse(this.props.location.search).page)} />
